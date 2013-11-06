@@ -11,11 +11,8 @@ find_package(catkin REQUIRED COMPONENTS
   rospy
   tf2
   tf2_msgs
-  tf2_py
 )
 find_package(Boost REQUIRED COMPONENTS thread)
-
-catkin_python_setup()
 
 catkin_package(
   INCLUDE_DIRS include
@@ -29,7 +26,6 @@ catkin_package(
   rosgraph
   tf2
   tf2_msgs
-  tf2_py
 )
 
 include_directories(include ${catkin_INCLUDE_DIRS})
@@ -100,7 +96,6 @@ find_package(catkin REQUIRED COMPONENTS
   rostest
   tf2
   tf2_msgs
-  tf2_py
 )
 
 
